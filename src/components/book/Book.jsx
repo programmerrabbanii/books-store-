@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 
 const Book = ({bok}) => {
     const {author,bookId,category,image,publisher,rating,review,tags,totalPages,yearOfPublishing,bookName}=bok
     return (
         <div>
-            <div className="card bg-base-100 w-96 border p-4 rounded-lg ">
+         <Link to={`/books/${bookId}`}>
+         <div className="card bg-base-100 w-96 border p-4 rounded-lg ">
   <figure className="bg-gray-300 py-8">
     <img className="card-image w-64  h-52 rounded-lg transition-transform duration-300 ease-in-out transform hover:rotate-y-6 hover:rotate-x-6 hover:scale-105 shadow-lg hover:sh"
       src={image}
@@ -38,6 +40,8 @@ const Book = ({bok}) => {
     </div>
   </div>
 </div>
+         
+         </Link>
             
         </div>
     );
