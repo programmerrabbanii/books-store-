@@ -1,9 +1,10 @@
+import Bannar from "../bannar/Bannar";
+import Dashboard from "../dashboard/Dashboard";
 
 const Home = () => {
     return (
         <div>
-            <h4>this is home page </h4>
-            
+          <Bannar></Bannar>            
         </div>
     );
 };
