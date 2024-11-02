@@ -1,10 +1,11 @@
 import Bannar from "../bannar/Bannar";
-import Dashboard from "../dashboard/Dashboard";
+import Books from "../books/Books";
 
 const Home = () => {
     return (
         <div>
-          <Bannar></Bannar>            
+          <Bannar></Bannar>     
+          <Books></Books>       
         </div>
     );
 };
